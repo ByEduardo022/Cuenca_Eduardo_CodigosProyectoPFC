@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="es" class="h-full">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FitLife - Preguntas Frecuentes</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'fitlife-blue': '#3B82F6',
+                        'fitlife-purple': '#8B5CF6',
+                        'fitlife-dark': '#1E293B',
+                        'fitlife-light': '#F1F5F9',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="h-full bg-gradient-to-br from-fitlife-blue to-fitlife-purple text-gray-800">
+    <div class="min-h-screen flex flex-col">
+        <!-- Botón de volver -->
+        <a href="index.php"
+            class="absolute top-4 left-4 flex items-center text-sm font-medium text-gray-800 bg-gradient-to-r from-gray-200 to-gray-300 px-4 py-2 rounded-full shadow-md hover:from-gray-300 hover:to-gray-400 focus:ring-2 focus:ring-gray-500 focus:outline-none transition duration-300">
+            <!-- Icono opcional -->
+            <svg class="w-5 h-5 mr-2 text-gray-600" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+            </svg>
+
+        </a>
+        <!-- Contenido principal -->
+        <main class="flex-grow container mx-auto px-4 py-8">
+            <h1 class="text-5xl font-bold text-white mb-4 text-center">
+                Preguntas Frecuentes
+            </h1>
+            <p class="text-xl text-gray-200 text-center mb-8">
+                Encuentra respuestas a tus dudas y aprovecha al máximo FitLife.
+            </p>
+
+            <div class="grid md:grid-cols-2 gap-8">
+                <!-- Sección de Cuenta y Acceso -->
+                <section
+                    class="bg-white rounded-lg shadow-xl p-6 hover:shadow-2xl transform hover:-translate-y-2 transition-all duration-300">
+                    <div class="flex items-center space-x-3 mb-4">
+                        <i class="fas fa-user-circle text-fitlife-blue text-3xl"></i>
+                        <h2 class="text-2xl font-semibold text-fitlife-blue">Cuenta y Acceso</h2>
+                    </div>
+                    <div class="space-y-4">
+                        <div class="bg-gray-100 rounded-lg p-4 hover:bg-gray-200 transition-all duration-300">
+                            <h3 class="text-lg font-medium text-gray-800 mb-2">
+                                ¿Cómo puedo crear una cuenta?
+                            </h3>
+                            <p class="text-gray-600">
+                                Para crear una cuenta, haz clic en el botón "Registrarse" en la página principal.
+                                Completa el formulario con tu información personal y elige una contraseña segura.
+                            </p>
+                        </div>
+                        <div class="bg-gray-100 rounded-lg p-4 hover:bg-gray-200 transition-all duration-300">
+                            <h3 class="text-lg font-medium text-gray-800 mb-2">
+                                ¿Cómo inicio sesión en mi cuenta?
+                            </h3>
+                            <p class="text-gray-600">
+                                Haz clic en "Iniciar Sesión" en la barra de navegación. Ingresa tu nombre de usuario y
+                                contraseña para acceder a tu cuenta.
+                            </p>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Sección de Planes de Entrenamiento -->
+                <section
+                    class="bg-white rounded-lg shadow-xl p-6 hover:shadow-2xl transform hover:-translate-y-2 transition-all duration-300">
+                    <div class="flex items-center space-x-3 mb-4">
+                        <i class="fas fa-dumbbell text-fitlife-blue text-3xl"></i>
+                        <h2 class="text-2xl font-semibold text-fitlife-blue">Planes de Entrenamiento</h2>
+                    </div>
+                    <div class="space-y-4">
+                        <div class="bg-gray-100 rounded-lg p-4 hover:bg-gray-200 transition-all duration-300">
+                            <h3 class="text-lg font-medium text-gray-800 mb-2">
+                                ¿Cómo puedo crear un plan de entrenamiento mensual?
+                            </h3>
+                            <p class="text-gray-600">
+                                Ve a la sección "Planes" y selecciona "Añadir Entrenamiento". Elige tus objetivos, nivel
+                                de fitness y disponibilidad.
+                            </p>
+                        </div>
+                        <div class="bg-gray-100 rounded-lg p-4 hover:bg-gray-200 transition-all duration-300">
+                            <h3 class="text-lg font-medium text-gray-800 mb-2">
+                                ¿Puedo hacer un seguimiento de mis Entrenamientos?
+                            </h3>
+                            <p class="text-gray-600">
+                                Sí, puedes llevar un seguimiento diario y personalizado de sus ejercicios y
+                                entrenamientos a taves de la ventana de "Proximos Ejercicios" o la tabla de
+                                "Entrenamientos" del panel principal
+                            </p>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Sección de Planes de Nutrición -->
+                <section
+                    class="bg-white rounded-lg shadow-xl p-6 hover:shadow-2xl transform hover:-translate-y-2 transition-all duration-300">
+                    <div class="flex items-center space-x-3 mb-4">
+                        <i class="fas fa-utensils text-fitlife-blue text-3xl"></i>
+                        <h2 class="text-2xl font-semibold text-fitlife-blue">Planes de Nutrición y Progreso</h2>
+                    </div>
+                    <div class="space-y-4">
+                        <div class="bg-gray-100 rounded-lg p-4 hover:bg-gray-200 transition-all duration-300">
+                            <h3 class="text-lg font-medium text-gray-800 mb-2">
+                                ¿Cómo puedo crear un plan de nutrición?
+                            </h3>
+                            <p class="text-gray-600">
+                                En la sección "Nutrición", rellena el formulario con los datos de tus comidas diarias.
+                                Ingresa las calorias, carbohidratos, grasas y proteinas. Nuestro sistema generará una
+                                tabla personalizada para que puedas estar al tanto de lo consumido semanalmente y
+                                diario.
+                            </p>
+                        </div>
+                        <div class="bg-gray-100 rounded-lg p-4 hover:bg-gray-200 transition-all duration-300">
+                            <h3 class="text-lg font-medium text-gray-800 mb-2">
+                                ¿Puedo estar al tanto de mi Progreso?
+                            </h3>
+                            <p class="text-gray-600">
+                                Sí, puedes hacer un seguimiento personalizado en la ventana de "Progreso". En esta
+                                seccion podras llevar un seguimiento tanto de tu Peso como de tu Indice de Grasa
+                                Corporal.
+                            </p>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Sección de Comunidad -->
+                <section
+                    class="bg-white rounded-lg shadow-xl p-6 hover:shadow-2xl transform hover:-translate-y-2 transition-all duration-300">
+                    <div class="flex items-center space-x-3 mb-4">
+                        <i class="fas fa-users text-fitlife-blue text-3xl"></i>
+                        <h2 class="text-2xl font-semibold text-fitlife-blue">Comunidad</h2>
+                    </div>
+                    <div class="space-y-4">
+                        <div class="bg-gray-100 rounded-lg p-4 hover:bg-gray-200 transition-all duration-300">
+                            <h3 class="text-lg font-medium text-gray-800 mb-2">
+                                ¿Cómo puedo compartir mis planes en la comunidad?
+                            </h3>
+                            <p class="text-gray-600">
+                                En la sección "Comunidad", haz clic en "Compartir Plan". Selecciona el plan que deseas
+                                compartir y añade una descripción.
+                            </p>
+                        </div>
+                        <div class="bg-gray-100 rounded-lg p-4 hover:bg-gray-200 transition-all duration-300">
+                            <h3 class="text-lg font-medium text-gray-800 mb-2">
+                                ¿Puedo modificar mis publicaciones?
+                            </h3>
+                            <p class="text-gray-600">
+                                Sí, puedes modificar tus publicaciones en cualquier momento. Ve a "Ver Mis Paginas",
+                                selecciona el plan que deseas cambiar y haz clic en "Editar Plan" o "Eliminar". Realiza
+                                los ajustes necesarios y guarda los cambios.
+                            </p>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </main>
+
+        <!-- Pie de página -->
+        <footer class="bg-fitlife-dark text-gray-400 mt-8">
+            <div class="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8">
+                <div class="flex flex-col md:flex-row justify-between items-center">
+                    <div class="mb-4 md:mb-0">
+                        <h2 class="text-fitlife-blue text-xl font-bold">FitLife</h2>
+                        <p class="text-sm">Tu compañero de fitness</p>
+                    </div>
+                    <div class="flex space-x-6">
+                        <a href="#" class="hover:text-fitlife-blue transition-colors duration-300">
+                            <i class="fab fa-facebook text-2xl"></i>
+                        </a>
+                        <a href="#" class="hover:text-fitlife-blue transition-colors duration-300">
+                            <i class="fab fa-instagram text-2xl"></i>
+                        </a>
+                        <a href="#" class="hover:text-fitlife-blue transition-colors duration-300">
+                            <i class="fab fa-twitter text-2xl"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="mt-4 text-center text-sm">
+                    &copy; 2023 FitLife. Todos los derechos reservados.
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>
